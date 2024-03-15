@@ -8,7 +8,7 @@ import re
 from html import escape as html_escape
 BOT_TOKEN = '6941176918:AAFe8ZcQ7EFu3WNUsdPetmIKkIURFkuy5DM'
 TARGET_CHAT_ID = '474275087'
-
+# need new key for telgram and check update api 
 message_queue = Queue()
 last_messages = []
 
@@ -65,7 +65,7 @@ async def incoming_message(bot: Bot, chat_id: str, author_name: str, content: st
         message_text = f"{reply_text}"
 
     media = message.get("attachments", [])
-
+# good work
     if media:
         for attachment in media:
             content_type = attachment.get("content_type", "")
@@ -136,6 +136,5 @@ async def main(bot: Bot):
 if __name__ == "__main__":
     bot = Bot(token=BOT_TOKEN)
     asyncio.run(main(bot=bot))
-
 
 
