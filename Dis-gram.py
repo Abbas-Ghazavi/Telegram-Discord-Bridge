@@ -8,7 +8,7 @@ import re
 from html import escape as html_escape
 BOT_TOKEN = '6941176918:AAFe8ZcQ7EFu3WNUsdPetmIKkIURFkuy5DM'
 TARGET_CHAT_ID = '474275087'
-# need new key for telgram and check update api 
+#fix bug
 message_queue = Queue()
 last_messages = []
 
