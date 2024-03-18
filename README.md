@@ -1,4 +1,4 @@
-# Telegram-Discord-Bridge
+# Telegram-Discord-Bridge private project
 
 A Python script to bridge communication between Discord and Telegram. This script uses a Telegram bot to forward Discord messages seamlessly.
 
