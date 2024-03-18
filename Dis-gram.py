@@ -8,7 +8,6 @@ import re
 from html import escape as html_escape
 BOT_TOKEN = '6941176918:AAFe8ZcQ7EFu3WNUsdPetmIKkIURFkuy5DM'
 TARGET_CHAT_ID = '474275087'
-#fix bug
 message_queue = Queue()
 last_messages = []
 
@@ -85,8 +84,6 @@ async def incoming_message(bot: Bot, chat_id: str, author_name: str, content: st
 
 async def main(bot: Bot):
     urls = ["https://discord.com/api/v9/channels/627217930576199690/messages"]
-    # urls = ["https://discord.com/api/v9/channels/1164694598656999514/messages"]
-    # urls = ["https://discord.com/api/v9/channels/627217971047038977/messages"]
 
     headers = {"Authorization": "MzI4NTI5OTQwNjExODU4NDMy.G3LNUQ._HP4ti8OM0jx4LpuOSm6ttGE3geX7sY-z39_TM"}
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector()) as session:
@@ -104,7 +101,6 @@ async def main(bot: Bot):
 
                     message_list = result
                     for message in message_list:
-                        # بررسی آیا پیام قبلا دریافت شده یا خیر
                         if message not in last_messages:
                             last_messages.append(message)
                             if len(last_messages) > 10:
@@ -131,8 +127,7 @@ async def main(bot: Bot):
 
             except Exception as e:
                 print(f"An error occurred: {e}")
-
-
+                
 if __name__ == "__main__":
     bot = Bot(token=BOT_TOKEN)
     asyncio.run(main(bot=bot))
