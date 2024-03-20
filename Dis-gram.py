@@ -6,8 +6,10 @@ import pytz
 import aiohttp
 import re
 from html import escape as html_escape
+
 BOT_TOKEN = '6941176918:AAFe8ZcQ7EFu3WNUsdPetmIKkIURFkuy5DM'
 TARGET_CHAT_ID = '474275087'
+
 message_queue = Queue()
 last_messages = []
 
@@ -52,7 +54,7 @@ async def incoming_message(bot: Bot, chat_id: str, author_name: str, content: st
         referenced_author = reply_info.get("author", "Unknown")
         referenced_content = reply_info.get("content", "")
 
-        # Replace user mentions in reply content
+
         reply_mentions = reply_info.get("mentions", [])
         for mention in reply_mentions:
             user_id = mention.get("id", "")
@@ -64,7 +66,8 @@ async def incoming_message(bot: Bot, chat_id: str, author_name: str, content: st
         message_text = f"{reply_text}"
 
     media = message.get("attachments", [])
-# good work
+                               
+
     if media:
         for attachment in media:
             content_type = attachment.get("content_type", "")
