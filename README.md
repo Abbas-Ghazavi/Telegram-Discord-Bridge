@@ -1,38 +1,17 @@
-# Telegram-Discord-Bridge
+# 🤖 Telegram-Discord-Bridge
 
-A Python script to bridge communication between Discord and Telegram. This script uses a Telegram bot to forward Discord messages seamlessly.
+A Python script to seamlessly bridge communication between Discord and Telegram using a Telegram bot.
 
-## Features
+## 🚀 Features
 
 - Forward text messages from Discord to Telegram.
 - Display and process related messages and replies.
 - Support for image and video attachments.
 - Timestamps displayed in the Iranian time zone.
 
-## Installation
+  
+Thank you!
 
-1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your-username/Telegram-Discord-Bridge.git
-    cd Telegram-Discord-Bridge
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Configuration
-
-Edit the `Dis-gram.py` file to set your Telegram bot token and other necessary details.
-
-```python
-# Replace with your Telegram bot token
-BOT_TOKEN = 'your_telegram_bot_token'
-
-# Other configuration parameters
-TARGET_CHAT_ID = 'your_target_chat_id'
-
-upload pic later !!
+![312451126-006c43c3-16a0-4031-8411-1e7cd6afe282](https://github.com/Abbas-Ghazavi/Telegram-Discord-Bridge/assets/118556497/74e41a44-ecad-4053-ae3a-02500b48f3d8)
+![312451075-c3d383e8-f0dd-48f7-8d2e-792db466338d](https://github.com/Abbas-Ghazavi/Telegram-Discord-Bridge/assets/118556497/db3c6f5a-2d05-402f-9458-d84aa4fdb4c8)
