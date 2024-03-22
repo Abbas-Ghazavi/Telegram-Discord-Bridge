@@ -7,8 +7,8 @@ import aiohttp
 import re
 from html import escape as html_escape
 
-BOT_TOKEN = '6941176918:AAFe8ZcQ7EFu3WNUsdPetmIKkIURFkuy5DM'
-TARGET_CHAT_ID = '474275087'
+BOT_TOKEN = ''
+TARGET_CHAT_ID = ''
 
 message_queue = Queue()
 last_messages = []
@@ -86,9 +86,9 @@ async def incoming_message(bot: Bot, chat_id: str, author_name: str, content: st
         await bot.send_message(chat_id=chat_id, text=message_text, parse_mode='HTML')
 
 async def main(bot: Bot):
-    urls = ["https://discord.com/api/v9/channels/627217930576199690/messages"]
+    urls = ["https://discord.com/api/v9/channels/(id text channel)"]
 
-    headers = {"Authorization": "MzI4NTI5OTQwNjExODU4NDMy.G3LNUQ._HP4ti8OM0jx4LpuOSm6ttGE3geX7sY-z39_TM"}
+    headers = {"Authorization": "api user discord"}
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector()) as session:
         last_message_id = None
         while True:
