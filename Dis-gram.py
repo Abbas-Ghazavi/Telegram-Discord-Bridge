@@ -53,8 +53,7 @@ async def incoming_message(bot: Bot, chat_id: str, author_name: str, content: st
     if reply_info:
         referenced_author = reply_info.get("author", "Unknown")
         referenced_content = reply_info.get("content", "")
-
-
+        
         reply_mentions = reply_info.get("mentions", [])
         for mention in reply_mentions:
             user_id = mention.get("id", "")
