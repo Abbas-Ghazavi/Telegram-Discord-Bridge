@@ -88,6 +88,7 @@ async def main(bot: Bot):
     urls = ["https://discord.com/api/v9/channels/(id text channel)"]
 
     headers = {"Authorization": "api user discord"}
+    
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector()) as session:
         last_message_id = None
         while True:
