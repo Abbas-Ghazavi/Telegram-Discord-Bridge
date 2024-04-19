@@ -1,3 +1,4 @@
+
 # 🤖 Telegram-Discord-Bridge
 
 A Python script to seamlessly bridge communication between Discord and Telegram using a Telegram bot.
